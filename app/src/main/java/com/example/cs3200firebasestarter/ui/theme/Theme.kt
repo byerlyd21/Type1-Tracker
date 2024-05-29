@@ -14,17 +14,24 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
+import androidx.compose.ui.graphics.Color
+
+val DeepBlue = Color(0xFF083D77)
+val LightBlue = Color(0xFF85D4E3)
+val SoftOrange = Color(0xFFF4D35E)
+val DeepOrange = Color(0xFFEE964B)
+val SoftGreen = Color(0xFF4CAF50)
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = DeepBlue,
+    secondary = DeepOrange,
+    tertiary = SoftGreen,
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    primary = LightBlue,
+    secondary = SoftOrange,
+    tertiary = SoftGreen,
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -63,7 +70,7 @@ fun CS3200FirebaseStarterTheme(
     }
 
     MaterialTheme(
-        colorScheme = colorScheme,
+        colorScheme = darkColorScheme(),
         typography = Typography,
         content = content
     )

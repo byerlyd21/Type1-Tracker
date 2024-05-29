@@ -38,13 +38,13 @@ fun SplashScreen(navHostController: NavHostController) {
         verticalArrangement = Arrangement.SpaceAround
     ) {
         Text(
-            text = "Firebase Todos",
+            text = "Type 2 Tracker",
             modifier = Modifier.fillMaxWidth(),
             style = MaterialTheme.typography.headlineLarge,
             textAlign = TextAlign.Center
         )
         Text(
-            text = "USU-CS3200",
+            text = "Your meals your way",
             modifier = Modifier.fillMaxWidth(),
             style = MaterialTheme.typography.headlineSmall,
             textAlign = TextAlign.Center,

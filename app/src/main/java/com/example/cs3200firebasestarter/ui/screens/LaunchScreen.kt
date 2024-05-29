@@ -23,17 +23,8 @@ fun LaunchScreen(navHostController: NavHostController) {
                 modifier = Modifier.fillMaxWidth(),
                 textAlign = TextAlign.Center
             )
-            Text(
-                text = "We guarantee this is best app you will ever use!",
-                modifier = Modifier.fillMaxWidth(),
-                textAlign = TextAlign.Center
-            )
-            Text(
-                text = "Before you continue you will need to create an account",
-                modifier = Modifier.fillMaxWidth(),
-                textAlign = TextAlign.Center
-            )
-            Spacer(modifier = Modifier.height(8.dp))
+
+            Spacer(modifier = Modifier.height(32.dp))
             Button(onClick = { navHostController.navigate(Routes.signUp.route) }) {
                 Text(text = "Create Account")
             }
